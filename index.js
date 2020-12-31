@@ -15,40 +15,18 @@ var board = new five.Board({
 
 board.on('ready',function (){
     var speed, commands, motors;
-    // var anode = new five.Led.RGB({
-    //     pins: {
-    //         red: 9,
-    //         green: 11,
-    //         blue: 10
-    //     },
-    //     isAnode: true
-    // });
+    
     var digital = new five.Led(13);
-    // commands = null;
-
+   
     digital.off();
-    // digital.color("#efe13d");
-
-    // digital.blink(1000);
-
+   
     var blink = true;
 
     io.on('connection', function(socket){
-        // socket.on('azul', function(){
-        //     anode.on();
-        //     anode.color('#3366CC');
-        // });
-        // socket.on('verde', function(){
-        //     anode.on();
-        //     anode.color('#009900');
-        // });
-        // socket.on('rojo', function(){
-        //     anode.on();
-        //     anode.color('#FF0000');
-    // });
+        
     socket.on('stop', function (){
         if (blink){
-            digital.stop(); // to stop blinking
+            digital.stop(); 
             blink = false;
         }
         else{
