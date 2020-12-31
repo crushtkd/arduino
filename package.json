@@ -1,0 +1,23 @@
+{
+  "name": "arduino",
+  "version": "1.0.0",
+  "description": "mi primer arduino testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crushtkd/arduino.git"
+  },
+  "author": "rene parra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crushtkd/arduino/issues"
+  },
+  "homepage": "https://github.com/crushtkd/arduino#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "johnny-five": "^2.0.0"
+  }
+}
